@@ -69,6 +69,7 @@ functions.http('gtmDownloader', async (req, res) => {
   try {
     // run main
     const data = await main();
+
     res.status(200).send(data);
 
     // write to BQ tables
